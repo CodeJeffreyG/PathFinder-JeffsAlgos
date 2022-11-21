@@ -1,14 +1,21 @@
 function createGrid() {
-  const twoDArray = [];
+  const createGrid = [];
+  let node = {
+    className: "node",
+    id: null,
+    wall: null,
+    start: null,
+    end: null
+  };
 
   for (let row = 0; row < 10; row += 1) {
-    twoDArray.push([]);
+    createGrid.push([]);
     for (let col = 0; col < 10; col += 1) {
-      twoDArray[row].push([]);
+        createGrid[row].push({...node, id: `${row} ${col}`});
     }
   }
 
-  return twoDArray;
+  return createGrid;
 }
 
-console.log(createGrid());
+console.table(createGrid());
