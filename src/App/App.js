@@ -1,11 +1,8 @@
 import "./App.css";
+import Graph from "../Graph/Graph";
 
 function App() {
-  return (
-    <div className="graph-container">
-      <main className="graph"> </main>
-    </div>
-  );
+  return <Graph />;
 }
 
 export default App;

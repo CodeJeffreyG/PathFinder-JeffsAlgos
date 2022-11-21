@@ -1,4 +1,4 @@
-function createGrid() {
+export function createGrid() {
   const createGrid = [];
   let node = {
     className: "node",
@@ -18,4 +18,4 @@ function createGrid() {
   return createGrid;
 }
 
-console.table(createGrid());
+
