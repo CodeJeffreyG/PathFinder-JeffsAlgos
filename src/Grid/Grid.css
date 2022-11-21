@@ -1,0 +1,14 @@
+.Grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  height: 50vh;
+  width: 50%;
+}
+
+.Grid {
+  background-color: red;
+  width: 50%;
+  height: 50%;
+}

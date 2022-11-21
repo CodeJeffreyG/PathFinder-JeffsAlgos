@@ -1,5 +1,5 @@
-export function createGrid() {
-  const createGrid = [];
+export default function createGrid() {
+  const Grid = [];
   let node = {
     className: "node",
     id: null,
@@ -9,13 +9,13 @@ export function createGrid() {
   };
 
   for (let row = 0; row < 10; row += 1) {
-    createGrid.push([]);
+    Grid.push([]);
     for (let col = 0; col < 10; col += 1) {
-        createGrid[row].push({...node, id: `${row} ${col}`});
+      Grid[row].push({...node, id: `${row} ${col}`});
     }
   }
 
-  return createGrid;
+  return Grid;
 }
 
 
